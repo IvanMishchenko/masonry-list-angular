@@ -1,0 +1,7 @@
+<div appDynamicallyRowRange class="grid">
+  <div class="item" *ngFor="let item of items">
+    <div class="content">
+      <ng-container [ngTemplateOutlet]="listItemTemplate" [ngTemplateOutletContext]="{ $implicit: item }"></ng-container>     
+    </div>
+  </div>  
+</div>

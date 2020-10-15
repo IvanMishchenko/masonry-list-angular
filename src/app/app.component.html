@@ -1,0 +1,9 @@
+
+<ng-template #listItemTemplate let-item>
+  <app-example-template
+    [src]="item.src"
+    [description]="item.description">
+  </app-example-template>
+</ng-template>
+
+<app-masonry-list [listItemTemplate]="listItemTemplate" [items]="data"></app-masonry-list>
